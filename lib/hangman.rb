@@ -22,7 +22,7 @@ For saved game enter: load
 		user_input = gets.chomp.downcase
 		case user_input
 		when "new" 
-			@secret_word = "word"#pick_secret_word(@@dictionary)
+			@secret_word = pick_secret_word(@@dictionary)#"word"
 			@secret_word.length.times {guessing_word << '_'}
 			game_logic(@turns)
 		when "load" 
